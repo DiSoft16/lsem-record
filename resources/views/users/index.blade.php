@@ -50,14 +50,11 @@
                                 </td>
                                 <td>
                                     <a href="{{action('UserController@edit', $user->id)}}"
-                                       class="btn btn-warning">Edit</a></td>
-                                <td>
-                                    <form action="{{action('UserController@destroy', $user->id)}}" method="post">
-                                        {{csrf_field()}}
-                                        <input name="_method" type="hidden" value="DELETE">
-
-                                        <button class="btn btn-danger" type="submit">Delete</button>
-                                    </form>
+                                       class="btn btn-warning">Edit</a>
+                                    <a href="{{action('UserController@edit', $user->id)}}"
+                                       class="btn btn-warning">Edit</a>
+                                    <a href="{{action('UserController@destroy', $user->id)}}"
+                                       class="btn btn-danger">delete</a>
                                 </td>
                             </tr>
 

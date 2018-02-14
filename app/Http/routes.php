@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index');
 Route::get('/user/activation/{token}', 'Auth\AuthController@userActivation');
 
 Route::resource('/user', 'UserController');
+
+Route::get('user/delete/{id}', 'UserController@destroy');
