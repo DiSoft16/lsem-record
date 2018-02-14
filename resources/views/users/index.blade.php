@@ -11,9 +11,9 @@
 @section('content')
 
     <div class="container">
-        @if(Session::has('success'))
+        @if (Session::has('success'))
             <div class="alert alert-info">
-                {{Session::get('success')}}
+                {{ Session::get('success') }}
             </div>
         @endif
 
